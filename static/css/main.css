@@ -1,0 +1,165 @@
+body {
+font-family: 'Lato', sans-serif;
+font-size: .75em;
+//background: #3d3d3d;
+background-color: #cecece;
+background-image:url(../images/bg1.jpg);
+}
+
+#header {
+font-family: 'Reenie Beanie', cursive;
+background-color: #ffffff;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
+padding-top: 1px;
+padding-bottom: 1px;
+padding-left: 15px;
+width: 59.8em;
+font-size: 1.5em; 
+
+}
+
+#header a {
+text-decoration: none;
+color: #000000;
+}
+
+#content-area {
+width: 60em;
+margin-left: 10px;
+float: left;
+margin-top: 5px;
+}
+
+//#sidebar, .blog-post, #header { background-image:url(../images/bg.jpg); }
+
+#sidebar {
+width: 30em;
+float: left;
+margin-left: 1em;
+margin-top: 10px;
+}
+
+.blog-post{
+margin-top: 5px;
+margin-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #fff;
+//-webkit-border-radius: 15px;
+//-moz-border-radius: 15px;
+//border-radius: 15px;
+
+//box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.49);
+//-moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.49);
+//-webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.49);
+
+}
+
+.field-explanation, #authorSearch {
+font-size: 1.5em;
+//background-color: #fff;
+//-webkit-border-radius: 10px;
+//-moz-border-radius: 10px;
+//border-radius: 10px;
+padding: 5px;
+//display: block;
+margin-bottom: 5px;
+//width: 42.2em;
+margin-top: 0px;
+padding-top: 0px;
+}
+
+#authorSearch {
+margin-top:10px;
+font-size: 1em;
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: #ffffff;
+}
+
+#authorSearch input {
+width: 70%;
+}
+
+.blog-post h1, #blog-post p {
+color: #000000;
+}
+
+.blog-post h2 {
+margin-top: 0px;
+padding-top: 0px;
+}
+
+input{
+margin-left: 10px;
+margin-top: 0px;
+padding-top: 0px;
+}
+
+#title {
+width: 85%;
+}
+#author {
+width: 80%;
+}
+
+textarea {
+width: 100%;
+height: 15em;
+margin-top: 5px;
+margin-bottom: 15px;
+display: block;
+}
+
+.date {
+font-style: italic;
+padding-left: 5px;
+color: #78a1fb;
+}
+
+.author {
+font-weight: bold;
+}
+
+.author a {
+text-decoration: none;
+color: #000000;
+}
+
+.author a:hover {
+text-decoration: underline;
+}
+
+.submit{
+//background-color: #ffffff;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+form {
+margin-top: 0px;
+padding-top: 0px;
+padding-bottom: 5px;
+background-color: #ffffff;
+}
+
+#userLogin {
+float: right;
+}
+
+#userLogin a {
+text-decoration: none;
+color: #000000;
+font-weight: bold;
+}
+
+#userLogin a:hover {
+text-decoration: underline;
+}
+
+
+

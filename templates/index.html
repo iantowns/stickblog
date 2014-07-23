@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Stickblog</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Reenie+Beanie' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="../static/css/main.css" />
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" src="static/js/jquery.form.js"></script><script type="text/javascript"> 
+        $(document).ready(function() { 
+            $('#blog-form').submit(function(e) { 
+                $(this).ajaxSubmit({
+                    target: "#content-area"
+                    });
+
+                 e.preventDefault;
+              return false;
+            });
+            $('#authorText').change(function(e) { 
+        var suffix = "?"+ $(this).serialize().replace(/\+/g,'%20')
+        window.location = 'http://' + window.location.host + window.location.pathname + suffix;
+            }); 
+        }); 
+</script>
+</head>
+<body>
+<div id="userLogin">
+			{% if user %}
+				Hello, {{ user.nickname }}. <a href="{{ logoutURL }}">log out</a>
+			{% else %}
+				Click <a href="{{ loginURL }}">here</a> to log in.
+			{% endif %}
+</div>
+<div id="header">
+<h1><a href="/">Stickblog</a></h1>
+</div>
+<div id="content-area">
+{% include "entries.html" %}
+</div>
+
+<div id="sidebar">
+{% if user %}
+<form id="blog-form" action="/submit" method="POST">
+<br/>
+  <div class="field-explanation">Title
+      <input id="title" name="post-title" class="title-input" />
+  </div>
+  <div class="field-explanation">Post
+      <textarea name="post-contents"></textarea>
+  </div>
+    <div class="field-explanation">Author
+     <input id="author" name="post-author" class="name-input" />
+  </div>
+  <div class="submit">
+    <input type="submit" value="Submit!">
+    </div>
+  </form>
+{% endif %}
+<div id="authorSearch">Search By Author <input id="authorText" type="text" name="author"/>
+</div>
+  </div>
+</body>
+</html>

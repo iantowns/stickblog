@@ -1,0 +1,8 @@
+{% for post in posts %}
+<div class="blog-post">
+     <h2>{{ post.title }}</h2>
+     <p>{{ post.contents }}</p>
+     <span class="author"><a href=/?author={{ post.author|urlencode }}>{{ post.author }}</a></span>
+     <span class="date">{{ post.date|date:"N j, Y, P"}}</span>
+</div>
+{% endfor %}
